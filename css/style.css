@@ -5,6 +5,11 @@ header {
     font-size: x-large;
 }
 
+nav {
+    text-align: center;
+    font-size: larger;
+}
+
 main {
     background-color: blue;
 }
