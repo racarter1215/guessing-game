@@ -16,6 +16,7 @@ var result1 = prompt("Am I from the East Coast?");
 // console.log('Before converting result to uppercase:' + result1);
 var result1 = result1.toUpperCase();
 // console.log('After converting result to uppercase:' + result1);
+// console.log(result1);
     if (result1 == 'YES') {
         alert("Good job! You're paying attention!");
     } else if (result1 == 'Y') {
@@ -32,6 +33,7 @@ var result2 = prompt("Was I in the military?");
 // console.log('Before converting result to uppercase:' + result2);
 var result2 = result2.toUpperCase();
 // console.log('After converting result to uppercase:' + result2);
+// console.log(result2);
     if (result2 == 'YES') {
         alert("Good job! You're paying attention!");
     } else if (result2 == 'Y') {
@@ -48,6 +50,7 @@ var result3 = prompt("Did I contract for the Department of Transportation?");
 // console.log('Before converting result to uppercase:' + result3);
 var result3 = result3.toUpperCase();
 // console.log('After converting result to uppercase:' + result3);
+// console.log(result3);
     if (result3 == 'YES') {
         alert("WROOOOONG! Reload the page to try this question again!");
     } else if (result3 == 'Y') {
@@ -64,6 +67,7 @@ var result4 = prompt("Did I successfully get into coding in the military or gove
 // console.log('Before converting result to uppercase:' + result4);
 var result4 = result4.toUpperCase();
 // console.log('After converting result to uppercase:' + result4);
+// console.log(result4);
     if (result4 == 'YES') {
         alert("WROOOOONG! Reload the page to try this question again!");
     } else if (result4 == 'Y') {
@@ -80,6 +84,7 @@ var result5 = prompt("Do I want to become a white hat?");
 // console.log('Before converting result to uppercase:' + result5);
 var result5 = result5.toUpperCase();
 // console.log('After converting result to uppercase:' + result5);
+// console.log(result5);
     if (result5 == 'YES') {
         alert("Awesome! You know me so well!");
     } else if (result5 == 'Y') {
@@ -91,6 +96,7 @@ var result5 = result5.toUpperCase();
     } else {
         alert("Huh? Does not compute!!!");
     }
+
 
 var goodbye = prompt("Type your first name again!")
 // console.log('Before converting result to uppercase:' + goodbye);
