@@ -117,10 +117,10 @@ for (var iteration = 0; iteration < 4; iteration = iteration +1) {
         }
 }
 
-var correctAnswers = ["A BRIDGE TOO FAR", "KELLY'S HEROES", "BATMAN: THE DARK KNIGHT", "EVENT HORIZON", "THE LONGEST DAY", "THE DIRTY DOZEN", "DUMB AND DUMBER", "THOR: RAGNAROK", "STAR WARS: A NEW HOPE", "ULTRAMARINES: THE MOVIE"];
+var correctAnswers = ["A BRIDGE TOO FAR", "KELLY'S HEROES", "BATMAN: THE DARK KNIGHT", "EVENT HORIZON", "THE LONGEST DAY", "THE DIRTY DOZEN"];
 
-for (var index = 0; index < 5; index = index ++) {
-    var result7 = prompt("Name one of my top 10 favorite movies!");
+for (var index = 0; index < correctAnswers.length; index ++) {
+    var result7 = prompt("Name one of my top 6 favorite movies!");
     // console.log('Original case:' + result7);
     var result7 = result7.toUpperCase();
     // console.log('Converted to uppercase:' + result7);
@@ -143,25 +143,14 @@ for (var index = 0; index < 5; index = index ++) {
         } else if (result7 === correctAnswers[5]) {
             alert("That is correct!");
             var index = (index + 10);
-        } else if (result7 === correctAnswers[6]) {
-            alert("That is correct!");
-            var index = (index + 10);
-        } else if (result7 === correctAnswers[7]) {
-            alert("That is correct!");
-            var index = (index + 10);
-        } else if (result7 === correctAnswers[8]) {
-            alert("That is correct!");
-            var index = (index + 10);
-        } else if (result7 === correctAnswers[9]) {  
-            alert("That is correct!");
-            var index = (index + 10);
         } else {
             alert("Invalid Response! Try again!");
-        }
-        if (index == 6) {
-            alert("Sorry, too many wrong answers. Consult my page to find the right ones!");
+        } 
+        if (index == 5) {
+            alert("Sorry, too many wrong answers. Right answers include: A BRIDGE TOO FAR, KELLY'S HEROES, BATMAN: THE DARK KNIGHT, EVENT HORIZON, THE LONGEST DAY, THE DIRTY DOZEN");
         }
 }
+
 
 
 var goodbye = prompt("Type your first name again!")
