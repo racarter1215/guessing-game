@@ -17,10 +17,13 @@ var result1 = prompt("Am I from the East Coast?");
 var result1 = result1.toUpperCase();
 // console.log('Converted to uppercase:' + result1);
 // console.log(result1);
+var score = 0
     if (result1 == 'YES') {
         alert("Good job! You're paying attention!");
+        var score = (score + 1);
     } else if (result1 == 'Y') {
         alert("Good job! You're paying attention!");
+        var score = (score + 1);
     } else if (result1 == 'NO') {
         alert("WROOOOONG! Reload the page to try this question again!");
     } else if (result1 == 'N') {
@@ -36,8 +39,10 @@ var result2 = result2.toUpperCase();
 // console.log(result2);
     if (result2 == 'YES') {
         alert("Good job! You're paying attention!");
+        var score = (score + 1);
     } else if (result2 == 'Y') {
         alert("Good job! You're paying attention!");
+        var score = (score + 1);
     } else if (result2 == 'NO') {
         alert("WROOOOONG! Reload the page to try this question again!");
     } else if (result2 == 'N') {
@@ -57,8 +62,10 @@ var result3 = result3.toUpperCase();
         alert("WROOOOONG! Reload the page to try this question again!");
     } else if (result3 == 'NO') {
         alert("Good job! You're paying attention!");
+        var score = (score + 1);
     } else if (result3 == 'N') {
         alert("Good job! You're paying attention!");
+        var score = (score + 1);
     } else {
         alert("Huh? Does not compute!!!");
     }
@@ -74,8 +81,10 @@ var result4 = result4.toUpperCase();
         alert("WROOOOONG! Reload the page to try this question again!");
     } else if (result4 == 'NO') {
         alert("Good job! You're paying attention!");
+        var score = (score + 1);
     } else if (result4 == 'N') {
         alert("Good job! You're paying attention!");
+        var score = (score + 1);
     } else {
         alert("Huh? Does not compute!!!");
     }
@@ -87,8 +96,10 @@ var result5 = result5.toUpperCase();
 // console.log(result5);
     if (result5 == 'YES') {
         alert("Awesome! You know me so well!");
+        var score = (score + 1);
     } else if (result5 == 'Y') {
         alert("Awesome! You know me so well!");
+        var score = (score + 1);
     } else if (result5 == 'NO') {
         alert("Uh....read my bio and do the test over again. You must have missed something!");
     } else if (result5 == 'N') {
@@ -107,6 +118,7 @@ for (var iteration = 0; iteration < 4; iteration = iteration +1) {
         if (result6 == 7) {
             alert("That's the right answer!");
             var iteration = (iteration + 10);
+            var score = (score + 1);
         } else if (result6 < 7) {
             alert("Too low! Try Again");
         } else if (result6 > 7) {
@@ -128,21 +140,27 @@ for (var index = 0; index < correctAnswers.length; index ++) {
         if (result7 === correctAnswers[0]) {
             alert("That is correct!");
             var index = (index + 10);
+            var score = (score + 1);
         } else if (result7 === correctAnswers[1]) {
             alert("That is correct!");
             var index = (index + 10);
+            var score = (score + 1);
         } else if (result7 === correctAnswers[2]) {
             alert("That is correct!");
             var index = (index + 10);
+            var score = (score + 1);
         } else if (result7 === correctAnswers[3]) {
             alert("That is correct!");
             var index = (index + 10);
+            var score = (score + 1);
         } else if (result7 === correctAnswers[4]) {
             alert("That is correct!");
             var index = (index + 10);
+            var score = (score + 1);
         } else if (result7 === correctAnswers[5]) {
             alert("That is correct!");
             var index = (index + 10);
+            var score = (score + 1);
         } else {
             alert("Invalid Response! Try again!");
         } 
@@ -151,7 +169,7 @@ for (var index = 0; index < correctAnswers.length; index ++) {
         }
 }
 
-
+alert("Your final score is: " + score);
 
 var goodbye = prompt("Type your first name again!")
 // console.log('Original case:' + goodbye);
