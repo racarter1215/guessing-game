@@ -98,21 +98,70 @@ var result5 = result5.toUpperCase();
     }
 
     
-    for (var iteration = 0; iteration < 4; iteration = iteration +1) {
-        var result6 = prompt("Guess a Number!");
-        // console.log('Original case:' + result6);
-        var result6 = result6.toUpperCase();
-        // console.log('Converted to uppercase:' + result6);
-        // console.log(result6);
-            if (result6 == 7) {
-             alert("That's the right answer!");
-         } else if (result6 < 7) {
-             alert("Too low! Try Again");
-         } else if (result6 > 7) {
-             alert("Too High! Try Again");
-         } 
-    }
-        // console.log(result6);
+for (var iteration = 0; iteration < 4; iteration = iteration +1) {
+    var result6 = prompt("Guess a Number!");
+    // console.log('Original case:' + result6);
+    var result6 = result6.toUpperCase();
+    // console.log('Converted to uppercase:' + result6);
+    // console.log(result6);
+        if (result6 == 7) {
+            alert("That's the right answer!");
+            var iteration = (iteration + 10);
+        } else if (result6 < 7) {
+            alert("Too low! Try Again");
+        } else if (result6 > 7) {
+            alert("Too High! Try Again");
+        } 
+        if (iteration == 3) {
+            alert("Sorry, the correct answer was 7!");
+        }
+}
+
+var correctAnswers = ["A BRIDGE TOO FAR", "KELLY'S HEROES", "BATMAN: THE DARK KNIGHT", "EVENT HORIZON", "THE LONGEST DAY", "THE DIRTY DOZEN", "DUMB AND DUMBER", "THOR: RAGNAROK", "STAR WARS: A NEW HOPE", "ULTRAMARINES: THE MOVIE"];
+
+for (var index = 0; index < 5; index = index ++) {
+    var result7 = prompt("Name one of my top 10 favorite movies!");
+    // console.log('Original case:' + result7);
+    var result7 = result7.toUpperCase();
+    // console.log('Converted to uppercase:' + result7);
+        // console.log(result7);
+        if (result7 === correctAnswers[0]) {
+            alert("That is correct!");
+            var index = (index + 10);
+        } else if (result7 === correctAnswers[1]) {
+            alert("That is correct!");
+            var index = (index + 10);
+        } else if (result7 === correctAnswers[2]) {
+            alert("That is correct!");
+            var index = (index + 10);
+        } else if (result7 === correctAnswers[3]) {
+            alert("That is correct!");
+            var index = (index + 10);
+        } else if (result7 === correctAnswers[4]) {
+            alert("That is correct!");
+            var index = (index + 10);
+        } else if (result7 === correctAnswers[5]) {
+            alert("That is correct!");
+            var index = (index + 10);
+        } else if (result7 === correctAnswers[6]) {
+            alert("That is correct!");
+            var index = (index + 10);
+        } else if (result7 === correctAnswers[7]) {
+            alert("That is correct!");
+            var index = (index + 10);
+        } else if (result7 === correctAnswers[8]) {
+            alert("That is correct!");
+            var index = (index + 10);
+        } else if (result7 === correctAnswers[9]) {  
+            alert("That is correct!");
+            var index = (index + 10);
+        } else {
+            alert("Invalid Response! Try again!");
+        }
+        if (index == 6) {
+            alert("Sorry, too many wrong answers. Consult my page to find the right ones!");
+        }
+}
 
 
 var goodbye = prompt("Type your first name again!")
