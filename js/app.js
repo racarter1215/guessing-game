@@ -97,6 +97,23 @@ var result5 = result5.toUpperCase();
         alert("Huh? Does not compute!!!");
     }
 
+    
+    for (var iteration = 0; iteration < 4; iteration = iteration +1) {
+        var result6 = prompt("Guess a Number!");
+        // console.log('Original case:' + result6);
+        var result6 = result6.toUpperCase();
+        // console.log('Converted to uppercase:' + result6);
+        // console.log(result6);
+            if (result6 == 7) {
+             alert("That's the right answer!");
+         } else if (result6 < 7) {
+             alert("Too low! Try Again");
+         } else if (result6 > 7) {
+             alert("Too High! Try Again");
+         } 
+    }
+        // console.log(result6);
+
 
 var goodbye = prompt("Type your first name again!")
 // console.log('Original case:' + goodbye);
