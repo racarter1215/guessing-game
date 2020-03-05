@@ -164,7 +164,7 @@ for (var index = 0; index < correctAnswers.length; index ++) {
         } else {
             alert("Invalid Response! Try again!");
         } 
-        if (index == 5) {
+        if (index > correctAnswers.length) {
             alert("Sorry, too many wrong answers. Right answers include: A BRIDGE TOO FAR, KELLY'S HEROES, BATMAN: THE DARK KNIGHT, EVENT HORIZON, THE LONGEST DAY, THE DIRTY DOZEN");
         }
 }
