@@ -1,184 +1,89 @@
 'use strict';
+var score = 0;
+console.log(score);
 
-var answer = prompt("What is your first name?");
-// console.log('Original case:' + answer);
-var answer = answer.toUpperCase();
-// console.log('Converted to uppercase:' + answer);
-    if (answer == 'ALASTAIR') {
-        alert("Hello Alastair, please give me an A on this assignment!");
-    } else if (answer == 'JACOB') {
-        alert("Hello Jacob, please give me an A on this assignment!");
-    } else {
-        alert("If this isn't Jacob or Alastair, you shouldn't be on this site :). You can stay for now, but don't get comfortable!");
-    }
-
-var result1 = prompt("Am I from the East Coast?");
-// console.log('Original case:' + result1);
-var result1 = result1.toUpperCase();
-// console.log('Converted to uppercase:' + result1);
-// console.log(result1);
-var score = 0
-    if (result1 == 'YES') {
-        alert("Good job! You're paying attention!");
-        var score = (score + 1);
-    } else if (result1 == 'Y') {
-        alert("Good job! You're paying attention!");
-        var score = (score + 1);
-    } else if (result1 == 'NO') {
-        alert("WROOOOONG! Reload the page to try this question again!");
-    } else if (result1 == 'N') {
-        alert("WROOOOONG! Reload the page to try this question again!");
-    } else {
-        alert("Huh? Does not compute!!!!");
-    }
-
-var result2 = prompt("Was I in the military?");
-// console.log('Original case:' + result2);
-var result2 = result2.toUpperCase();
-// console.log('Converted to uppercase:' + result2);
-// console.log(result2);
-    if (result2 == 'YES') {
-        alert("Good job! You're paying attention!");
-        var score = (score + 1);
-    } else if (result2 == 'Y') {
-        alert("Good job! You're paying attention!");
-        var score = (score + 1);
-    } else if (result2 == 'NO') {
-        alert("WROOOOONG! Reload the page to try this question again!");
-    } else if (result2 == 'N') {
-        alert("WROOOOONG! Reload the page to try this question again!");
-    } else {
-        alert("Huh? Does not compute!!!!");
-    }
-
-var result3 = prompt("Did I contract for the Department of Transportation?");
-// console.log('Original case:' + result3);
-var result3 = result3.toUpperCase();
-// console.log('Converted to uppercase:' + result3);
-// console.log(result3);
-    if (result3 == 'YES') {
-        alert("WROOOOONG! Reload the page to try this question again!");
-    } else if (result3 == 'Y') {
-        alert("WROOOOONG! Reload the page to try this question again!");
-    } else if (result3 == 'NO') {
-        alert("Good job! You're paying attention!");
-        var score = (score + 1);
-    } else if (result3 == 'N') {
-        alert("Good job! You're paying attention!");
-        var score = (score + 1);
-    } else {
-        alert("Huh? Does not compute!!!");
-    }
-        
-var result4 = prompt("Did I successfully get into coding in the military or government?");
-// console.log('Original case:' + result4);
-var result4 = result4.toUpperCase();
-// console.log('Converted to uppercase:' + result4);
-// console.log(result4);
-    if (result4 == 'YES') {
-        alert("WROOOOONG! Reload the page to try this question again!");
-    } else if (result4 == 'Y') {
-        alert("WROOOOONG! Reload the page to try this question again!");
-    } else if (result4 == 'NO') {
-        alert("Good job! You're paying attention!");
-        var score = (score + 1);
-    } else if (result4 == 'N') {
-        alert("Good job! You're paying attention!");
-        var score = (score + 1);
-    } else {
-        alert("Huh? Does not compute!!!");
-    }
-
-var result5 = prompt("Do I want to become a white hat?");
-// console.log('Original case:' + result5);
-var result5 = result5.toUpperCase();
-// console.log('Converted to uppercase:' + result5);
-// console.log(result5);
-    if (result5 == 'YES') {
-        alert("Awesome! You know me so well!");
-        var score = (score + 1);
-    } else if (result5 == 'Y') {
-        alert("Awesome! You know me so well!");
-        var score = (score + 1);
-    } else if (result5 == 'NO') {
-        alert("Uh....read my bio and do the test over again. You must have missed something!");
-    } else if (result5 == 'N') {
-        alert("Uh....read my bio and do the test over again. You must have missed something!");
-    } else {
-        alert("Huh? Does not compute!!!");
-    }
-
-    
-for (var iteration = 0; iteration < 4; iteration = iteration +1) {
-    var result6 = prompt("Guess a Number!");
-    // console.log('Original case:' + result6);
-    var result6 = result6.toUpperCase();
-    // console.log('Converted to uppercase:' + result6);
-    // console.log(result6);
-        if (result6 == 7) {
-            alert("That's the right answer!");
-            var iteration = (iteration + 10);
-            var score = (score + 1);
-        } else if (result6 < 7) {
-            alert("Too low! Try Again");
-        } else if (result6 > 7) {
-            alert("Too High! Try Again");
-        } 
-        if (iteration == 3) {
-            alert("Sorry, the correct answer was 7!");
-        }
+// This is a function to Ask the user their name!
+function family(){
+  var answer = prompt('What is your first name?').toUpperCase();
+  // console.log('Original case:' + answer);
+  
+  if (answer === 'ALASTAIR') {
+    alert('Hello Alastair, please give me an A on this assignment!');
+  } else if (answer === 'JACOB') {
+    alert('Hello Jacob, please give me an B on this assignment!');
+  } else {
+    alert('If this isn\'t Jacob or Alastair, you shouldn\'t be on this site :). You can stay for now, but don\'t get comfortable!');
+  }
 }
 
-var correctAnswers = ["A BRIDGE TOO FAR", "KELLY'S HEROES", "BATMAN: THE DARK KNIGHT", "EVENT HORIZON", "THE LONGEST DAY", "THE DIRTY DOZEN"];
+family();
 
-for (var index = 0; index < correctAnswers.length; index ++) {
-    var result7 = prompt("Name one of my top 6 favorite movies!");
-    // console.log('Original case:' + result7);
-    var result7 = result7.toUpperCase();
-    // console.log('Converted to uppercase:' + result7);
-        // console.log(result7);
-        if (result7 === correctAnswers[0]) {
-            alert("That is correct!");
-            var index = (index + 10);
-            var score = (score + 1);
-        } else if (result7 === correctAnswers[1]) {
-            alert("That is correct!");
-            var index = (index + 10);
-            var score = (score + 1);
-        } else if (result7 === correctAnswers[2]) {
-            alert("That is correct!");
-            var index = (index + 10);
-            var score = (score + 1);
-        } else if (result7 === correctAnswers[3]) {
-            alert("That is correct!");
-            var index = (index + 10);
-            var score = (score + 1);
-        } else if (result7 === correctAnswers[4]) {
-            alert("That is correct!");
-            var index = (index + 10);
-            var score = (score + 1);
-        } else if (result7 === correctAnswers[5]) {
-            alert("That is correct!");
-            var index = (index + 10);
-            var score = (score + 1);
-        } else {
-            alert("Invalid Response! Try again!");
-        } 
-        if (index > correctAnswers.length) {
-            alert("Sorry, too many wrong answers. Right answers include: A BRIDGE TOO FAR, KELLY'S HEROES, BATMAN: THE DARK KNIGHT, EVENT HORIZON, THE LONGEST DAY, THE DIRTY DOZEN");
-        }
+
+// This is a function to ask the user a yes or no question.
+
+function yesno(question, correct){
+
+  var response = prompt(question).toUpperCase();;
+  console.log('Original case:' + response);
+
+  if (response === correct) {
+    alert('Good job! You\'re paying attention!');
+    score++;
+  } else {
+    alert('WRONG!!!!!! YOU SUCK!');
+  }
 }
 
-alert("Your final score is: " + score);
+yesno('Am I from the East Coast?' , 'YES' );
+yesno('Was I in the Military' , 'YES');
+yesno('Did I contract for the Department of Transportation?' , 'NO');
+yesno('Did I successfully get into coding in the military or government?' , 'NO');
+yesno('Do I want to become a white hat?' , 'YES');
 
-var goodbye = prompt("Type your first name again!")
-// console.log('Original case:' + goodbye);
-var goodbye = goodbye.toUpperCase();
-// console.log('Converted to uppercase:' + goodbye);
-    if (goodbye == 'ALASTAIR') {
-        alert("Bye Alastair, come again soon!");
-    } else if (goodbye == 'JACOB') {
-        alert("Bye Jacob, come again soon!");
+
+// This is a number guessing game!
+function numberGame(question, correct) {
+  var choice = prompt(question);
+
+  for (var i = 1; i < 4; i++) {
+    if (choice > correct) {
+      choice = prompt('Too Big!');
+    } else if (choice < correct) {
+      choice = prompt('Too Small!');
+    } else if (choice === correct) {
+      alert('Correct!');
+      score++;
+      break ;
     } else {
-        alert("Honestly, you shouldn't have been here in the first place!");
+      alert("Oops, the answer was 7!")
     }
+  }
+}
+numberGame('Guess the number', '7');
+
+
+// this is a multiple answer question
+var multiQuestion = prompt('Name my Favorite movies!').toUpperCase();
+var rightAnswer = ['A BRIDGE TOO FAR' , 'KELLYS HEROES' , 'BATMAN THE DARK KNIGHT' , 'EVENT HORIZON' , 'THE LONGEST DAY' , 'THE DIRTY DOZEN'];
+var attempts = 6;
+
+console.log(multiQuestion);
+function multiAnswer(multiQuestion, rightAnswer, attempts) {
+  attemptsloop: while (attempts, attempts > 0, attempts--) {
+    for (var answerIndex = 0; answerIndex < rightAnswer.length; answerIndex++) {
+      if (multiQuestion === rightAnswer[answerIndex]) {
+        alert('Correct!');
+        score++ ;
+        break attemptsloop;
+      } else {
+        multiQuestion = prompt('Wrong! Guess Again!').toUpperCase();
+      }
+    }
+  }
+}
+
+multiAnswer(multiQuestion, rightAnswer, attempts);
+
+
+alert('Your final score is: ' + score);
+
