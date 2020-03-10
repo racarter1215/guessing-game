@@ -2,10 +2,10 @@
 var score = 0;
 console.log(score);
 
-// This is a function to Ask the user their name!
+
 function family(){
   var answer = prompt('What is your first name?').toUpperCase();
-  // console.log('Original case:' + answer);
+
   
   if (answer === 'ALASTAIR') {
     alert('Hello Alastair, please give me an A on this assignment!');
@@ -18,8 +18,6 @@ function family(){
 
 family();
 
-
-// This is a function to ask the user a yes or no question.
 
 function yesno(question, correct){
 
@@ -41,7 +39,6 @@ yesno('Did I successfully get into coding in the military or government?' , 'NO'
 yesno('Do I want to become a white hat?' , 'YES');
 
 
-// This is a number guessing game!
 function numberGame(question, correct) {
   var choice = prompt(question);
 
@@ -62,19 +59,19 @@ function numberGame(question, correct) {
 numberGame('Guess the number', '7');
 
 
-// this is a multiple answer question
+
 var multiQuestion = prompt('Name my Favorite movies!').toUpperCase();
 var rightAnswer = ['A BRIDGE TOO FAR' , 'KELLYS HEROES' , 'BATMAN THE DARK KNIGHT' , 'EVENT HORIZON' , 'THE LONGEST DAY' , 'THE DIRTY DOZEN'];
-var attempts = 6;
+var attempts;
 
-console.log(multiQuestion);
+
 function multiAnswer(multiQuestion, rightAnswer, attempts) {
-  attemptsloop: while (attempts, attempts > 0, attempts--) {
+  while (attempts = 0, attempts < 6, attempts++) {
     for (var answerIndex = 0; answerIndex < rightAnswer.length; answerIndex++) {
       if (multiQuestion === rightAnswer[answerIndex]) {
         alert('Correct!');
         score++ ;
-        break attemptsloop;
+        break;
       } else {
         multiQuestion = prompt('Wrong! Guess Again!').toUpperCase();
       }
@@ -84,6 +81,7 @@ function multiAnswer(multiQuestion, rightAnswer, attempts) {
 
 multiAnswer(multiQuestion, rightAnswer, attempts);
 
+alert("Thanks for playing " + answer + "!");
 
 alert('Your final score is: ' + score);
 
